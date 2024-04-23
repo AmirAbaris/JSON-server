@@ -15,7 +15,6 @@ import { HomeCardGameInputModel } from "./models/home-card-game-input.model";
 import { HomeCardInputModel } from "./models/home-card-input.model";
 import { PriceLabelModel } from "./models/price-label.model";
 
-'../assets/card-covers/card1.jpg'
 export const cardListData: CardListInputModel = {
     homeCardActionData: [
         {
