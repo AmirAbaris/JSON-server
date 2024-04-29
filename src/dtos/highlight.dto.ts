@@ -1,8 +1,10 @@
 import { HighlightButtonEnum } from "../enums/highlight-button.enum";
 
-export interface HighlightPreviewItemInputModel {
+export interface HighlightDTO {
+    name: string;
     id: string;
     cover: string;
+    thumbnailCover: string;
     logo: string
     description: string
     price?: number;
