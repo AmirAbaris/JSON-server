@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { categoryItem, fortniteData, freeItemData, highlightData, homeAction, mostPopularItems, recentlyUploadedItems, sliderData, trendingItems } from './data';
+import { comingSoonGameData, fortniteData, freeItemData, highlightData, homeAction, mostPopularItems, newReleaseGameData, recentlyUploadedItems, sliderData, topPlayedRatedGameData, trendingItems } from './data';
 
 const app = express();
 const PORT = 3000;
@@ -24,8 +24,16 @@ app.get('/fortnite-data', (_req: Request, res: Response) => {
     res.json(fortniteData);
 });
 
-app.get('/category-item-data', (_req: Request, res: Response) => {
-    res.json(categoryItem);
+app.get('/new-release-data', (_req: Request, res: Response) => {
+    res.json(newReleaseGameData);
+});
+
+app.get('/top-player-data', (_req: Request, res: Response) => {
+    res.json(topPlayedRatedGameData);
+});
+
+app.get('/coming-soon-data', (_req: Request, res: Response) => {
+    res.json(comingSoonGameData);
 });
 
 app.get('/trending-items-data', (_req: Request, res: Response) => {

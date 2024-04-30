@@ -1,7 +1,5 @@
 import { GameDto } from "./dtos/game.dto";
-import { CategoryType } from "./enums/category-type.enum";
 import { GameType } from "./enums/game-type.enum";
-import { HighlightButtonEnum } from "./enums/highlight-button.enum";
 
 export const highlightData: GameDto[] = [
     // 1
@@ -13,7 +11,6 @@ export const highlightData: GameDto[] = [
         logo: "../assets/prev-logo-covers/lg1.png",
         description: "Description for Example Highlight 1",
         price: 29.99,
-        highlightButtonType: HighlightButtonEnum.PUBLISHED,
         extraItem1: true,
         extraItem2: false
     },
@@ -25,7 +22,6 @@ export const highlightData: GameDto[] = [
         logo: "../assets/prev-logo-covers/lg2.png",
         description: "Description for Example Highlight 2",
         price: 19.99,
-        highlightButtonType: HighlightButtonEnum.ARTICLE,
         extraItem1: false,
         extraItem2: true
     },
@@ -37,7 +33,6 @@ export const highlightData: GameDto[] = [
         logo: "../assets/prev-logo-covers/lg3.png",
         description: "Description for Example Highlight 3",
         price: 0,
-        highlightButtonType: HighlightButtonEnum.FREE,
         extraItem1: false,
         extraItem2: true
     },
@@ -49,7 +44,6 @@ export const highlightData: GameDto[] = [
         logo: "../assets/prev-logo-covers/lg4.png",
         description: "Description for Example Highlight 3",
         price: 19.99,
-        highlightButtonType: HighlightButtonEnum.ARTICLE,
         extraItem1: false,
         extraItem2: true
     },
@@ -61,7 +55,6 @@ export const highlightData: GameDto[] = [
         logo: "../assets/prev-logo-covers/lg4.png",
         description: "Description for Example Highlight 4",
         price: 19.99,
-        highlightButtonType: HighlightButtonEnum.PUBLISHED,
         extraItem1: false,
         extraItem2: true
     },
@@ -73,7 +66,6 @@ export const highlightData: GameDto[] = [
         logo: "../assets/prev-logo-covers/lg6.jpg",
         description: "Description for Example Highlight 6",
         price: 19.99,
-        highlightButtonType: HighlightButtonEnum.PUBLISHED,
         extraItem1: false,
         extraItem2: true
     }
@@ -91,7 +83,6 @@ export const sliderData: GameDto[] = [
         isFree: false,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -104,7 +95,6 @@ export const sliderData: GameDto[] = [
         isFree: false,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card2.jpeg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -117,7 +107,6 @@ export const sliderData: GameDto[] = [
         isFree: false,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -130,7 +119,6 @@ export const sliderData: GameDto[] = [
         isFree: false,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -143,7 +131,6 @@ export const sliderData: GameDto[] = [
         isFree: false,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -156,7 +143,6 @@ export const sliderData: GameDto[] = [
         isFree: false,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card6.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     }
@@ -169,7 +155,6 @@ export const homeAction: GameDto[] = [
         cover: "../assets/free-covers/hm1.jpg",
         name: "Example Banner 3",
         description: "Description for Example Banner 1",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
@@ -178,7 +163,6 @@ export const homeAction: GameDto[] = [
         cover: "../assets/free-covers/h24.jpeg",
         name: "Example Banner 4",
         description: "Description for Example Banner 2",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
@@ -190,7 +174,6 @@ export const homeAction: GameDto[] = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 3",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -200,7 +183,6 @@ export const homeAction: GameDto[] = [
         name: "Example Banner 4",
         finalPrice: 39.99,
         description: "Description for Example Banner 4",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -210,7 +192,7 @@ export const homeAction: GameDto[] = [
         name: "Example Banner 5",
         finalPrice: 39.99,
         description: "Description for Example Banner 5",
-        hasWishlist: true,
+
         extraItem1: true,
         extraItem2: false
     },
@@ -220,7 +202,6 @@ export const homeAction: GameDto[] = [
         name: "Example Banner 6",
         finalPrice: 39.99,
         description: "Description for Example Banner 6",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     }
@@ -238,7 +219,6 @@ export const freeItemData: GameDto[] = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 7",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -252,7 +232,6 @@ export const freeItemData: GameDto[] = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 8",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -266,7 +245,6 @@ export const freeItemData: GameDto[] = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 9",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     }
@@ -279,7 +257,6 @@ export const fortniteData: GameDto[] = [
         cover: "../assets/free-covers/hm1.jpg",
         name: "Example Banner 10",
         description: "Description for Example Banner 10",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
@@ -288,13 +265,12 @@ export const fortniteData: GameDto[] = [
         cover: "../assets/free-covers/hm2.jpeg",
         name: "Example Banner 11",
         description: "Description for Example Banner 11",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
 ];
 
-export const categoryItem: GameDto[] = [
+export const newReleaseGameData: GameDto[] = [
     // 6
     {
         id: "12",
@@ -305,7 +281,6 @@ export const categoryItem: GameDto[] = [
         isFree: false,
         cover: "../assets/category-covers/cat01.jpg",
         isPublished: true,
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -316,7 +291,7 @@ export const categoryItem: GameDto[] = [
         cover: "../assets/category-covers/cat02.jpg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.MOST_PLAYED,
+
         extraItem1: false,
         extraItem2: true
     },
@@ -327,7 +302,6 @@ export const categoryItem: GameDto[] = [
         cover: "../assets/category-covers/cat03.jpg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -337,7 +311,6 @@ export const categoryItem: GameDto[] = [
         isFree: true,
         cover: "../assets/category-covers/cat04.jpeg",
         isPublished: false,
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         publishDate: new Date("2024-05-01"),
         extraItem2: true
@@ -349,7 +322,6 @@ export const categoryItem: GameDto[] = [
         cover: "../assets/category-covers/cat05.jpg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -359,7 +331,138 @@ export const categoryItem: GameDto[] = [
         cover: "../assets/category-covers/cat06.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.MOST_PLAYED,
+        extraItem1: false,
+        extraItem2: true
+    }
+];
+
+export const topPlayedRatedGameData: GameDto[] = [
+    // 6
+    {
+        id: "12",
+        name: "Example Card 12",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
+        isFree: false,
+        cover: "../assets/category-covers/cat01.jpg",
+        isPublished: true,
+        extraItem1: true,
+        extraItem2: false
+    },
+    {
+        id: "13",
+        name: "Example Card 13",
+        isFree: true,
+        cover: "../assets/category-covers/cat02.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "14",
+        name: "Example Card 3",
+        isFree: true,
+        cover: "../assets/category-covers/cat03.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "15",
+        name: "Example Card 4",
+        isFree: true,
+        cover: "../assets/category-covers/cat04.jpeg",
+        isPublished: false,
+        extraItem1: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem2: true
+    },
+    {
+        id: "16",
+        name: "Example Card 5",
+        isFree: true,
+        cover: "../assets/category-covers/cat05.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "17",
+        name: "Example Card 6",
+        cover: "../assets/category-covers/cat06.jpeg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    }
+];
+
+export const comingSoonGameData: GameDto[] = [
+    // 6
+    {
+        id: "12",
+        name: "Example Card 12",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
+        isFree: false,
+        cover: "../assets/category-covers/cat01.jpg",
+        isPublished: true,
+        extraItem1: true,
+        extraItem2: false
+    },
+    {
+        id: "13",
+        name: "Example Card 13",
+        isFree: true,
+        cover: "../assets/category-covers/cat02.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "14",
+        name: "Example Card 3",
+        isFree: true,
+        cover: "../assets/category-covers/cat03.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "15",
+        name: "Example Card 4",
+        isFree: true,
+        cover: "../assets/category-covers/cat04.jpeg",
+        isPublished: false,
+        extraItem1: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem2: true
+    },
+    {
+        id: "16",
+        name: "Example Card 5",
+        isFree: true,
+        cover: "../assets/category-covers/cat05.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "17",
+        name: "Example Card 6",
+        cover: "../assets/category-covers/cat06.jpeg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
         extraItem1: false,
         extraItem2: true
     }
@@ -377,7 +480,6 @@ export const trendingItems: GameDto[] = [
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
         isPublished: true,
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -388,7 +490,6 @@ export const trendingItems: GameDto[] = [
         cover: "../assets/card-covers/card2.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -398,7 +499,7 @@ export const trendingItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
+
         extraItem1: false,
         extraItem2: true
     },
@@ -408,7 +509,6 @@ export const trendingItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -418,7 +518,6 @@ export const trendingItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -428,7 +527,6 @@ export const trendingItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     }
@@ -446,7 +544,6 @@ export const mostPopularItems: GameDto[] = [
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
         isPublished: true,
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: true,
         extraItem2: false
     },
@@ -457,7 +554,6 @@ export const mostPopularItems: GameDto[] = [
         cover: "../assets/card-covers/card2.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -467,7 +563,6 @@ export const mostPopularItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -477,7 +572,6 @@ export const mostPopularItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -487,7 +581,6 @@ export const mostPopularItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -497,7 +590,6 @@ export const mostPopularItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     }
@@ -515,7 +607,6 @@ export const recentlyUploadedItems: GameDto[] = [
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
         isPublished: true,
-        categoryType: CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: true,
         extraItem2: false
     },
@@ -526,7 +617,6 @@ export const recentlyUploadedItems: GameDto[] = [
         cover: "../assets/card-covers/card2.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -536,7 +626,6 @@ export const recentlyUploadedItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -546,7 +635,6 @@ export const recentlyUploadedItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -556,7 +644,6 @@ export const recentlyUploadedItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -566,7 +653,6 @@ export const recentlyUploadedItems: GameDto[] = [
         isFree: true,
         type: GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     }

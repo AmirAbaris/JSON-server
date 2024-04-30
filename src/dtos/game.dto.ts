@@ -10,18 +10,15 @@ export interface GameDto {
     logo?: string
     description?: string
     price?: number;
-    highlightButtonType?: HighlightButtonEnum;
     discountPercent?: number;
     basePrice?: number;
     finalPrice?: number;
     isFree?: boolean;
     freeStartDate?: Date;
     freeEndDate?: Date;
-    hasWishlist?: boolean;
     type?: GameType;
     isPublished?: boolean;
     publishDate?: Date;
-    categoryType?: CategoryType;
     extraItem1: boolean;
     extraItem2: boolean;
 }
