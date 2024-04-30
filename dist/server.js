@@ -7,21 +7,32 @@ const express_1 = __importDefault(require("express"));
 const data_1 = require("./data");
 const app = (0, express_1.default)();
 const PORT = 3000;
-// Sample data for HighlightDTO, BannerDTO, and CardDTO
-const highlightDataDto = data_1.highlightData;
-const bannerDataDto = data_1.bannerData;
-const cardDataDto = data_1.cardData;
-// Endpoint to serve HighlightDTO data
 app.get('/highlight-data', (_req, res) => {
-    res.json(highlightDataDto);
+    res.json(data_1.highlightData);
 });
-// Endpoint to serve BannerDTO data
-app.get('/banner-data', (_req, res) => {
-    res.json(bannerDataDto);
+app.get('/slider-data', (_req, res) => {
+    res.json(data_1.sliderData);
 });
-// Endpoint to serve CardDTO data
-app.get('/card-data', (_req, res) => {
-    res.json(cardDataDto);
+app.get('/home-action-data', (_req, res) => {
+    res.json(data_1.homeAction);
+});
+app.get('/free-item-data', (_req, res) => {
+    res.json(data_1.freeItemData);
+});
+app.get('/fortnite-data', (_req, res) => {
+    res.json(data_1.fortniteData);
+});
+app.get('/category-item-data', (_req, res) => {
+    res.json(data_1.categoryItem);
+});
+app.get('/trending-items-data', (_req, res) => {
+    res.json(data_1.trendingItems);
+});
+app.get('/most-popular-items-data', (_req, res) => {
+    res.json(data_1.mostPopularItems);
+});
+app.get('/recently-uploaded-items-data', (_req, res) => {
+    res.json(data_1.recentlyUploadedItems);
 });
 // Start the server
 app.listen(PORT, () => {

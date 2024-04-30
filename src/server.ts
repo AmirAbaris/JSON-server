@@ -1,30 +1,43 @@
 import express, { Request, Response } from 'express';
-import { HighlightDTO } from './dtos/highlight.dto';
-import { BannerDTO } from './dtos/banner.dto';
-import { CardDTO } from './dtos/card.dto';
-import { bannerData, cardData, highlightData } from './data';
+import { categoryItem, fortniteData, freeItemData, highlightData, homeAction, mostPopularItems, recentlyUploadedItems, sliderData, trendingItems } from './data';
 
 const app = express();
 const PORT = 3000;
 
-// Sample data for HighlightDTO, BannerDTO, and CardDTO
-const highlightDataDto: HighlightDTO[] = highlightData;
-const bannerDataDto: BannerDTO[] = bannerData;
-const cardDataDto: CardDTO[] = cardData;
-
-// Endpoint to serve HighlightDTO data
 app.get('/highlight-data', (_req: Request, res: Response) => {
-    res.json(highlightDataDto);
+    res.json(highlightData);
 });
 
-// Endpoint to serve BannerDTO data
-app.get('/banner-data', (_req: Request, res: Response) => {
-    res.json(bannerDataDto);
+app.get('/slider-data', (_req: Request, res: Response) => {
+    res.json(sliderData);
 });
 
-// Endpoint to serve CardDTO data
-app.get('/card-data', (_req: Request, res: Response) => {
-    res.json(cardDataDto);
+app.get('/home-action-data', (_req: Request, res: Response) => {
+    res.json(homeAction);
+});
+
+app.get('/free-item-data', (_req: Request, res: Response) => {
+    res.json(freeItemData);
+});
+
+app.get('/fortnite-data', (_req: Request, res: Response) => {
+    res.json(fortniteData);
+});
+
+app.get('/category-item-data', (_req: Request, res: Response) => {
+    res.json(categoryItem);
+});
+
+app.get('/trending-items-data', (_req: Request, res: Response) => {
+    res.json(trendingItems);
+});
+
+app.get('/most-popular-items-data', (_req: Request, res: Response) => {
+    res.json(mostPopularItems);
+});
+
+app.get('/recently-uploaded-items-data', (_req: Request, res: Response) => {
+    res.json(recentlyUploadedItems);
 });
 
 // Start the server
