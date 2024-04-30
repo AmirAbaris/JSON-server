@@ -1,9 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.recentlyUploadedItems = exports.mostPopularItems = exports.trendingItems = exports.categoryItem = exports.fortniteData = exports.freeItemData = exports.homeAction = exports.sliderData = exports.highlightData = void 0;
-const category_type_enum_1 = require("./enums/category-type.enum");
+exports.recentlyUploadedItems = exports.mostPopularItems = exports.trendingItems = exports.comingSoonGameData = exports.topPlayedRatedGameData = exports.newReleaseGameData = exports.fortniteData = exports.freeItemData = exports.homeAction = exports.sliderData = exports.highlightData = void 0;
 const game_type_enum_1 = require("./enums/game-type.enum");
-const highlight_button_enum_1 = require("./enums/highlight-button.enum");
 exports.highlightData = [
     // 1
     {
@@ -14,7 +12,6 @@ exports.highlightData = [
         logo: "../assets/prev-logo-covers/lg1.png",
         description: "Description for Example Highlight 1",
         price: 29.99,
-        highlightButtonType: highlight_button_enum_1.HighlightButtonEnum.PUBLISHED,
         extraItem1: true,
         extraItem2: false
     },
@@ -26,7 +23,6 @@ exports.highlightData = [
         logo: "../assets/prev-logo-covers/lg2.png",
         description: "Description for Example Highlight 2",
         price: 19.99,
-        highlightButtonType: highlight_button_enum_1.HighlightButtonEnum.ARTICLE,
         extraItem1: false,
         extraItem2: true
     },
@@ -38,7 +34,6 @@ exports.highlightData = [
         logo: "../assets/prev-logo-covers/lg3.png",
         description: "Description for Example Highlight 3",
         price: 0,
-        highlightButtonType: highlight_button_enum_1.HighlightButtonEnum.FREE,
         extraItem1: false,
         extraItem2: true
     },
@@ -50,7 +45,6 @@ exports.highlightData = [
         logo: "../assets/prev-logo-covers/lg4.png",
         description: "Description for Example Highlight 3",
         price: 19.99,
-        highlightButtonType: highlight_button_enum_1.HighlightButtonEnum.ARTICLE,
         extraItem1: false,
         extraItem2: true
     },
@@ -62,7 +56,6 @@ exports.highlightData = [
         logo: "../assets/prev-logo-covers/lg4.png",
         description: "Description for Example Highlight 4",
         price: 19.99,
-        highlightButtonType: highlight_button_enum_1.HighlightButtonEnum.PUBLISHED,
         extraItem1: false,
         extraItem2: true
     },
@@ -74,7 +67,6 @@ exports.highlightData = [
         logo: "../assets/prev-logo-covers/lg6.jpg",
         description: "Description for Example Highlight 6",
         price: 19.99,
-        highlightButtonType: highlight_button_enum_1.HighlightButtonEnum.PUBLISHED,
         extraItem1: false,
         extraItem2: true
     }
@@ -90,7 +82,6 @@ exports.sliderData = [
         isFree: false,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -103,7 +94,6 @@ exports.sliderData = [
         isFree: false,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card2.jpeg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -116,7 +106,6 @@ exports.sliderData = [
         isFree: false,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -129,7 +118,6 @@ exports.sliderData = [
         isFree: false,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -142,7 +130,6 @@ exports.sliderData = [
         isFree: false,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -155,7 +142,6 @@ exports.sliderData = [
         isFree: false,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card6.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     }
@@ -167,7 +153,6 @@ exports.homeAction = [
         cover: "../assets/free-covers/hm1.jpg",
         name: "Example Banner 3",
         description: "Description for Example Banner 1",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
@@ -176,7 +161,6 @@ exports.homeAction = [
         cover: "../assets/free-covers/h24.jpeg",
         name: "Example Banner 4",
         description: "Description for Example Banner 2",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
@@ -188,7 +172,6 @@ exports.homeAction = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 3",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -198,7 +181,6 @@ exports.homeAction = [
         name: "Example Banner 4",
         finalPrice: 39.99,
         description: "Description for Example Banner 4",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -208,7 +190,6 @@ exports.homeAction = [
         name: "Example Banner 5",
         finalPrice: 39.99,
         description: "Description for Example Banner 5",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -218,7 +199,6 @@ exports.homeAction = [
         name: "Example Banner 6",
         finalPrice: 39.99,
         description: "Description for Example Banner 6",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     }
@@ -235,7 +215,6 @@ exports.freeItemData = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 7",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -249,7 +228,6 @@ exports.freeItemData = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 8",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -263,7 +241,6 @@ exports.freeItemData = [
         basePrice: 49.99,
         finalPrice: 39.99,
         description: "Description for Example Banner 9",
-        hasWishlist: true,
         extraItem1: true,
         extraItem2: false
     }
@@ -275,7 +252,6 @@ exports.fortniteData = [
         cover: "../assets/free-covers/hm1.jpg",
         name: "Example Banner 10",
         description: "Description for Example Banner 10",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
@@ -284,12 +260,11 @@ exports.fortniteData = [
         cover: "../assets/free-covers/hm2.jpeg",
         name: "Example Banner 11",
         description: "Description for Example Banner 11",
-        hasWishlist: false,
         extraItem1: true,
         extraItem2: false
     },
 ];
-exports.categoryItem = [
+exports.newReleaseGameData = [
     // 6
     {
         id: "12",
@@ -300,7 +275,6 @@ exports.categoryItem = [
         isFree: false,
         cover: "../assets/category-covers/cat01.jpg",
         isPublished: true,
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -311,7 +285,6 @@ exports.categoryItem = [
         cover: "../assets/category-covers/cat02.jpg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -322,7 +295,6 @@ exports.categoryItem = [
         cover: "../assets/category-covers/cat03.jpg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -332,7 +304,6 @@ exports.categoryItem = [
         isFree: true,
         cover: "../assets/category-covers/cat04.jpeg",
         isPublished: false,
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         publishDate: new Date("2024-05-01"),
         extraItem2: true
@@ -344,7 +315,6 @@ exports.categoryItem = [
         cover: "../assets/category-covers/cat05.jpg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -354,7 +324,134 @@ exports.categoryItem = [
         cover: "../assets/category-covers/cat06.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
+        extraItem1: false,
+        extraItem2: true
+    }
+];
+exports.topPlayedRatedGameData = [
+    // 6
+    {
+        id: "12",
+        name: "Example Card 12",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
+        isFree: false,
+        cover: "../assets/category-covers/cat01.jpg",
+        isPublished: true,
+        extraItem1: true,
+        extraItem2: false
+    },
+    {
+        id: "13",
+        name: "Example Card 13",
+        isFree: true,
+        cover: "../assets/category-covers/cat02.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "14",
+        name: "Example Card 3",
+        isFree: true,
+        cover: "../assets/category-covers/cat03.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "15",
+        name: "Example Card 4",
+        isFree: true,
+        cover: "../assets/category-covers/cat04.jpeg",
+        isPublished: false,
+        extraItem1: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem2: true
+    },
+    {
+        id: "16",
+        name: "Example Card 5",
+        isFree: true,
+        cover: "../assets/category-covers/cat05.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "17",
+        name: "Example Card 6",
+        cover: "../assets/category-covers/cat06.jpeg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    }
+];
+exports.comingSoonGameData = [
+    // 6
+    {
+        id: "12",
+        name: "Example Card 12",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
+        isFree: false,
+        cover: "../assets/category-covers/cat01.jpg",
+        isPublished: true,
+        extraItem1: true,
+        extraItem2: false
+    },
+    {
+        id: "13",
+        name: "Example Card 13",
+        isFree: true,
+        cover: "../assets/category-covers/cat02.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "14",
+        name: "Example Card 3",
+        isFree: true,
+        cover: "../assets/category-covers/cat03.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "15",
+        name: "Example Card 4",
+        isFree: true,
+        cover: "../assets/category-covers/cat04.jpeg",
+        isPublished: false,
+        extraItem1: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem2: true
+    },
+    {
+        id: "16",
+        name: "Example Card 5",
+        isFree: true,
+        cover: "../assets/category-covers/cat05.jpg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
+        extraItem1: false,
+        extraItem2: true
+    },
+    {
+        id: "17",
+        name: "Example Card 6",
+        cover: "../assets/category-covers/cat06.jpeg",
+        isPublished: false,
+        publishDate: new Date("2024-05-01"),
         extraItem1: false,
         extraItem2: true
     }
@@ -371,7 +468,6 @@ exports.trendingItems = [
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
         isPublished: true,
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: true,
         extraItem2: false
     },
@@ -382,7 +478,6 @@ exports.trendingItems = [
         cover: "../assets/card-covers/card2.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -392,7 +487,6 @@ exports.trendingItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -402,7 +496,6 @@ exports.trendingItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -412,7 +505,6 @@ exports.trendingItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     },
@@ -422,7 +514,6 @@ exports.trendingItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_SELLERS,
         extraItem1: false,
         extraItem2: true
     }
@@ -439,7 +530,6 @@ exports.mostPopularItems = [
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
         isPublished: true,
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: true,
         extraItem2: false
     },
@@ -450,7 +540,6 @@ exports.mostPopularItems = [
         cover: "../assets/card-covers/card2.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -460,7 +549,6 @@ exports.mostPopularItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -470,7 +558,6 @@ exports.mostPopularItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -480,7 +567,6 @@ exports.mostPopularItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     },
@@ -490,7 +576,6 @@ exports.mostPopularItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: category_type_enum_1.CategoryType.MOST_PLAYED,
         extraItem1: false,
         extraItem2: true
     }
@@ -507,7 +592,6 @@ exports.recentlyUploadedItems = [
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card1.jpg",
         isPublished: true,
-        categoryType: category_type_enum_1.CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: true,
         extraItem2: false
     },
@@ -518,7 +602,6 @@ exports.recentlyUploadedItems = [
         cover: "../assets/card-covers/card2.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
-        categoryType: category_type_enum_1.CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -528,7 +611,6 @@ exports.recentlyUploadedItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card3.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -538,7 +620,6 @@ exports.recentlyUploadedItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -548,7 +629,6 @@ exports.recentlyUploadedItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card4.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     },
@@ -558,7 +638,6 @@ exports.recentlyUploadedItems = [
         isFree: true,
         type: game_type_enum_1.GameType.BASE_GAME,
         cover: "../assets/card-covers/card5.jpg",
-        categoryType: category_type_enum_1.CategoryType.TOP_UPCOMING_WISHLISTED,
         extraItem1: false,
         extraItem2: true
     }

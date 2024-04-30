@@ -22,8 +22,14 @@ app.get('/free-item-data', (_req, res) => {
 app.get('/fortnite-data', (_req, res) => {
     res.json(data_1.fortniteData);
 });
-app.get('/category-item-data', (_req, res) => {
-    res.json(data_1.categoryItem);
+app.get('/new-release-data', (_req, res) => {
+    res.json(data_1.newReleaseGameData);
+});
+app.get('/top-player-data', (_req, res) => {
+    res.json(data_1.topPlayedRatedGameData);
+});
+app.get('/coming-soon-data', (_req, res) => {
+    res.json(data_1.comingSoonGameData);
 });
 app.get('/trending-items-data', (_req, res) => {
     res.json(data_1.trendingItems);

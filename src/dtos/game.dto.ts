@@ -1,6 +1,4 @@
-import { CategoryType } from "../enums/category-type.enum";
 import { GameType } from "../enums/game-type.enum";
-import { HighlightButtonEnum } from "../enums/highlight-button.enum";
 
 export interface GameDto {
     id?: string;
