@@ -1,8 +1,11 @@
 import express, { Request, Response } from 'express';
+import cors from 'cors';
 import { comingSoonGameData, fortniteData, freeItemData, highlightData, homeAction, mostPopularItems, newReleaseGameData, recentlyUploadedItems, sliderData, topPlayedRatedGameData, trendingItems } from './data';
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 app.get('/highlight-data', (_req: Request, res: Response) => {
     res.json(highlightData);
