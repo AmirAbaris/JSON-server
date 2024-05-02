@@ -8,7 +8,6 @@ const PORT = 3000;
 
 app.use(cors());
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/highlight-data', (_req: Request, res: Response) => {
     res.json(highlightData);
