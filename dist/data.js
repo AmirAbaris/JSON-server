@@ -207,7 +207,7 @@ exports.freeItemData = [
     // 4
     {
         id: "7",
-        cover: "/assets/free-covers/hm1.jpg",
+        cover: "/assets/free-covers/free1.jpeg",
         name: "Example Banner 7",
         freeStartDate: new Date("2024-05-01"),
         freeEndDate: new Date("2024-05-15"),
@@ -220,7 +220,7 @@ exports.freeItemData = [
     },
     {
         id: "8",
-        cover: "/assets/free-covers/hm2.jpeg",
+        cover: "/assets/free-covers/free2.jpeg",
         name: "Example Banner 8",
         freeStartDate: new Date("2024-05-01"),
         freeEndDate: new Date("2024-05-15"),
@@ -233,7 +233,7 @@ exports.freeItemData = [
     },
     {
         id: "9",
-        cover: "/assets/free-covers/hm3.jpg",
+        cover: "/assets/free-covers/free3.jpeg",
         name: "Example Banner 2",
         freeStartDate: new Date("2024-05-01"),
         freeEndDate: new Date("2024-05-15"),
