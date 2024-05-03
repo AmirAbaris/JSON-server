@@ -150,7 +150,7 @@ exports.homeAction = [
     // 3
     {
         id: "1",
-        cover: "/assets/free-covers/hm1.jpg",
+        cover: "/assets/home-covers/hm1.jpg",
         name: "Example Banner 3",
         description: "Description for Example Banner 1",
         extraItem1: true,
@@ -158,15 +158,15 @@ exports.homeAction = [
     },
     {
         id: "2",
-        cover: "/assets/free-covers/h24.jpeg",
-        name: "Example Banner 4",
+        cover: "/assets/home-covers/hm2.jpeg",
+        name: "Example Banner 2",
         description: "Description for Example Banner 2",
         extraItem1: true,
         extraItem2: false
     },
     {
         id: "3",
-        cover: "/assets/free-covers/hm3.jpeg",
+        cover: "/assets/home-covers/hm3.jpg",
         name: "Example Banner 3",
         discountPercent: 20,
         basePrice: 49.99,
@@ -177,7 +177,7 @@ exports.homeAction = [
     },
     {
         id: "4",
-        cover: "/assets/free-covers/hm4.jpg",
+        cover: "/assets/home-covers/hm4.jpg",
         name: "Example Banner 4",
         finalPrice: 39.99,
         description: "Description for Example Banner 4",
@@ -186,7 +186,7 @@ exports.homeAction = [
     },
     {
         id: "5",
-        cover: "/assets/free-covers/hm5.jpg",
+        cover: "/assets/home-covers/hm5.jpg",
         name: "Example Banner 5",
         finalPrice: 39.99,
         description: "Description for Example Banner 5",
@@ -195,7 +195,7 @@ exports.homeAction = [
     },
     {
         id: "6",
-        cover: "/assets/free-covers/hm6.jpg",
+        cover: "/assets/home-covers/hm6.jpg",
         name: "Example Banner 6",
         finalPrice: 39.99,
         description: "Description for Example Banner 6",
