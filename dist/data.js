@@ -249,17 +249,25 @@ exports.fortniteData = [
     // 5
     {
         id: "10",
-        cover: "/assets/free-covers/hm1.jpg",
-        name: "Example Banner 10",
-        description: "Description for Example Banner 10",
+        cover: "/assets/fortnite-covers/ft1.jpg",
+        name: "Example fortnite 1",
+        description: "Description for fortnite",
         extraItem1: true,
         extraItem2: false
     },
     {
         id: "11",
-        cover: "/assets/free-covers/hm2.jpeg",
-        name: "Example Banner 11",
-        description: "Description for Example Banner 11",
+        cover: "/assets/fortnite-covers/ft2.jpg",
+        name: "Example fortnite 2",
+        description: "Description for fortnite",
+        extraItem1: true,
+        extraItem2: false
+    },
+    {
+        id: "44",
+        cover: "/assets/fortnite-covers/ft3.jpeg",
+        name: "Example fortnite 3",
+        description: "Description for fortnite",
         extraItem1: true,
         extraItem2: false
     },
