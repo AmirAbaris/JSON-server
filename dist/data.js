@@ -433,7 +433,7 @@ exports.comingSoonGameData = [
         id: "13",
         name: "Example Card 13",
         isFree: true,
-        cover: "/assets/category-covers/cat02.jpg",
+        cover: "/assets/category-covers/cat02.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
         extraItem1: false,
