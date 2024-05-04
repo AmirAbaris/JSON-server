@@ -299,7 +299,7 @@ export const newReleaseGameData: GameDto[] = [
         basePrice: 29.99,
         finalPrice: 26.99,
         isFree: true,
-        cover: "/assets/category-covers/cat02.jpg",
+        cover: "/assets/category-covers/cat02.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
 
@@ -377,7 +377,7 @@ export const topPlayedRatedGameData: GameDto[] = [
         id: "13",
         name: "Example Card 13",
         isFree: true,
-        cover: "/assets/category-covers/cat02.jpg",
+        cover: "/assets/category-covers/cat02.jpge",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
 
