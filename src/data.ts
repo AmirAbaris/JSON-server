@@ -287,6 +287,9 @@ export const newReleaseGameData: GameDto[] = [
     {
         id: "13",
         name: "Example Card 13",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
         isFree: true,
         cover: "/assets/category-covers/cat02.jpg",
         isPublished: false,
@@ -298,6 +301,9 @@ export const newReleaseGameData: GameDto[] = [
     {
         id: "14",
         name: "Example Card 3",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
         isFree: true,
         cover: "/assets/category-covers/cat03.jpg",
         isPublished: false,
@@ -308,6 +314,9 @@ export const newReleaseGameData: GameDto[] = [
     {
         id: "15",
         name: "Example Card 4",
+        discountPercent: 10,
+        basePrice: 29.99,
+        finalPrice: 26.99,
         isFree: true,
         cover: "/assets/category-covers/cat04.jpeg",
         isPublished: false,
@@ -318,6 +327,9 @@ export const newReleaseGameData: GameDto[] = [
     {
         id: "16",
         name: "Example Card 5",
+        discountPercent: 0,
+        basePrice: 29.99,
+        finalPrice: 26.99,
         isFree: true,
         cover: "/assets/category-covers/cat05.jpg",
         isPublished: false,
@@ -328,6 +340,9 @@ export const newReleaseGameData: GameDto[] = [
     {
         id: "17",
         name: "Example Card 6",
+        discountPercent: 0,
+        basePrice: 29.99,
+        finalPrice: 26.99,
         cover: "/assets/category-covers/cat06.jpeg",
         isPublished: false,
         publishDate: new Date("2024-05-01"),
