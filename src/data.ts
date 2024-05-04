@@ -82,7 +82,7 @@ export const sliderData: GameDto[] = [
         finalPrice: 26.99,
         isFree: false,
         type: GameType.BASE_GAME,
-        cover: "/assets/card-covers/card1.jpg",
+        cover: "/assets/slider-covers/sl1.jpeg",
         extraItem1: true,
         extraItem2: false
     },
@@ -94,7 +94,7 @@ export const sliderData: GameDto[] = [
         finalPrice: 26.99,
         isFree: false,
         type: GameType.BASE_GAME,
-        cover: "/assets/card-covers/card2.jpeg",
+        cover: "/assets/slider-covers/sl2.jpeg",
         extraItem1: true,
         extraItem2: false
     },
@@ -106,7 +106,7 @@ export const sliderData: GameDto[] = [
         finalPrice: 26.99,
         isFree: false,
         type: GameType.BASE_GAME,
-        cover: "/assets/card-covers/card3.jpg",
+        cover: "/assets/slider-covers/sl3.jpeg",
         extraItem1: true,
         extraItem2: false
     },
@@ -118,7 +118,7 @@ export const sliderData: GameDto[] = [
         finalPrice: 26.99,
         isFree: false,
         type: GameType.BASE_GAME,
-        cover: "/assets/card-covers/card4.jpg",
+        cover: "/assets/slider-covers/sl4.jpg",
         extraItem1: true,
         extraItem2: false
     },
@@ -130,19 +130,7 @@ export const sliderData: GameDto[] = [
         finalPrice: 26.99,
         isFree: false,
         type: GameType.BASE_GAME,
-        cover: "/assets/card-covers/card5.jpg",
-        extraItem1: true,
-        extraItem2: false
-    },
-    {
-        id: "6",
-        name: "Example Card 6",
-        discountPercent: 10,
-        basePrice: 29.99,
-        finalPrice: 26.99,
-        isFree: false,
-        type: GameType.BASE_GAME,
-        cover: "/assets/card-covers/card6.jpg",
+        cover: "/assets/slider-covers/sl5.jpeg",
         extraItem1: true,
         extraItem2: false
     }
