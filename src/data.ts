@@ -270,7 +270,7 @@ export const fortniteData: GameDto[] = [
     },
     {
         id: "44",
-        cover: "/assets/fortnite-covers/ft3.jpeg",
+        cover: "/assets/fortnite-covers/ft3.jpg",
         name: "Example fortnite 3",
         description: "Description for fortnite",
         extraItem1: true,
