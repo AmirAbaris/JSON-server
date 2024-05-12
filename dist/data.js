@@ -6,12 +6,13 @@ exports.highlightData = [
     // 1
     {
         name: "Elysium Chronicles",
-        id: "1",
+        id: "111",
         cover: "/assets/images/preview-covers/prev1.jpg",
         thumbnailCover: "/assets/images/small-covers/sm1.jpg",
         logo: "/assets/images/prev-logo-covers/lg1.png",
         description: "Embark on a journey through the mystical world of Elysium, where ancient prophecies come to life and heroes are forged in the fires of destiny.",
         price: 29.99,
+        isPublished: true,
         extraItem1: true,
         extraItem2: false
     },
@@ -22,7 +23,7 @@ exports.highlightData = [
         thumbnailCover: "/assets/images/small-covers/sm2.png",
         logo: "/assets/images/prev-logo-covers/lg2.png",
         description: "Join the crew of the starship Nova as they traverse uncharted galaxies, encountering alien civilizations and battling cosmic threats.",
-        price: 19.99,
+        isFree: true,
         extraItem1: false,
         extraItem2: true
     },
@@ -33,7 +34,6 @@ exports.highlightData = [
         thumbnailCover: "/assets/images/small-covers/sm3.jpg",
         logo: "/assets/images/prev-logo-covers/lg3.png",
         description: "Enter the legendary Realm of Legends, where knights duel with dragons, wizards wield arcane powers, and epic quests await the brave.",
-        price: 0,
         extraItem1: false,
         extraItem2: true
     },
@@ -73,7 +73,7 @@ exports.highlightData = [
 ];
 exports.sliderData = [
     {
-        id: "7",
+        id: "111",
         name: "Space Odyssey: Frontier",
         discountPercent: 10,
         basePrice: 29.99,
